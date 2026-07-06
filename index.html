@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <meta name="description"
+        content="Hackathon de Cidadania Digital: aprenda sobre segurança de senhas, LGPD, combate à desinformação e uso responsável de IA.">
+    <link rel="icon" type="img/png" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <a href="#principal" class="link-pular">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho-principal" id="cabecalho">
+        <nav class="barra-navegacao">
+            <div class="logo">
+                <a href="#inicio">Você está seguro?</a>
+            </div>
+
+            <input type="checkbox" id="menu-controle" class="menu-checkbox">
+            <label for="menu-controle" class="menu-hamburguer" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <ul class="lista-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#seguranca-senhas">Senhas</a></li>
+                <li><a href="#seguranca-contas">Contas</a></li>
+                <li><a href="#lgpd">LGPD</a></li>
+                <li><a href="#termos-seguranca">Termos</a></li>
+                <li><a href="#combate-desinformacao">Desinformação</a></li>
+                <li><a href="#uso-inadequado-ias">IAs</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="principal">
+
+        <section id="inicio" class="secao-hero">
+            <div class="hero-painel">
+                <div class="hero-conteudo">
+                    <p class="hero-etiqueta">Hackathon · Cidadania Digital 2026</p>
+                    <h1 class="hero-titulo">Sua segurança digital começa aqui</h1>
+                    <p class="hero-tagline">
+                        Aprenda, na prática, a reconhecer golpes, fortalecer senhas e contas, entender a LGPD e usar
+                        a internet — e a inteligência artificial — com responsabilidade.
+                    </p>
+
+                    <div class="faixa-confianca">
+                        <span class="selo-confianca">NIST</span>
+                        <span class="selo-confianca">LGPD</span>
+                        <span class="selo-confianca">UNESCO</span>
+                        <span class="selo-confianca">Internet Segura · NIC.br</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faixa-estatisticas">
+                <div class="estatistica">
+                    <span class="estatistica-numero" data-contador data-final="357" data-sufixo=" mil+">0</span>
+                    <span class="estatistica-rotulo">ataques cibernéticos sofridos pelo Brasil só no 2º semestre de
+                        2023</span>
+                </div>
+                <div class="estatistica">
+                    <span class="estatistica-numero" data-contador data-final="79" data-sufixo="%">0</span>
+                    <span class="estatistica-rotulo">dos brasileiros relataram ter visto fake news nas eleições de
+                        2022</span>
+                </div>
+                <div class="estatistica">
+                    <span class="estatistica-numero" data-contador data-final="99" data-sufixo=",9%">0</span>
+                    <span class="estatistica-rotulo">dos ataques de comprometimento de conta podem ser evitados com
+                        autenticação em duas etapas</span>
+                </div>
+            </div>
+
+            <div class="cartao-intro">
+                <div class="cartao-conteudo destaque-inicial">
+                    <p>
+                        A cidadania digital é, acima de tudo, agir como uma(um) cidadã(ão) também no ambiente da
+                        internet. Para isso é importante conhecer e respeitar as normas de conduta, direitos e
+                        deveres estabelecidos pela nossa Constituição. Essas normas têm por objetivo promover maior
+                        respeito, segurança e paz para nossa sociedade.
+                    </p>
+                    <p>
+                        A internet, assim como outras tecnologias da informação (TICs), oferecem possibilidade para
+                        uma maior democratização de acesso ao conhecimento, a informações variadas e a diversão, mas
+                        é necessário que se tenham também alguns cuidados. <br>
+                        Por exemplo, se pensarmos em Fake News, já sabemos que elas se espalham de forma muito mais
+                        rápida do que as notícias reais. Isso é uma forma de manipulação de informações que pode
+                        trazer riscos de todo tipo, inclusive para a democracia.
+                    </p>
+                    <p>
+                        Por isso, esses assuntos devem ser abordados em casa e na escola. Essa questão é tão
+                        importante que até a Base Nacional Comum Curricular (BNCC) aborda esse tema e considera
+                        habilidades importantes no contato de crianças, adolescentes e jovens com conteúdos na
+                        internet.
+                    </p>
+                    <a href="https://learningpartnership.org/sites/default/files/resources/pdfs/REV-2801CIDADANIA-E-SEGURAN%C3%87A-DIGITAL-PARA-ADOLESCENTES-E-JOVENS-11.pdf"
+                        target="_blank" rel="noopener" class="link-fonte">Fonte</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="seguranca-senhas" class="secao">
+            <div class="cartao-conteudo">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Segurança · Senhas</p>
+                    <span class="tempo-leitura" data-tempo-leitura></span>
+                </div>
+                <h2>Segurança nas Senhas</h2>
+                <h3>Quão segura é a sua senha?</h3>
+                <p>
+                    A senha é a principal barreira de segurança na Internet. No entanto, muitas vezes criamos
+                    combinações fracas, tornando necessário aprender a fortalecê-las. Para orientar os usuários, o
+                    NIST (National Institute of Standards and Technology), órgão responsável pelas diretrizes de
+                    segurança da informação, atualizou seus padrões sobre o que é necessário para ter uma senha
+                    genuinamente segura.
+                </p>
+
+                <div class="bloco-leitura">
+                    <h3>O Novo Padrão NIST</h3>
+                    <p>
+                        As novas diretrizes do NIST mudaram drasticamente o foco da segurança digital. Antigamente,
+                        os usuários eram forçados a criar senhas cheias de caracteres especiais complexos e
+                        alterá-las a cada 90 dias — o que gerava o hábito ruim de anotar senhas em papéis ou
+                        esquecê-las com frequência.
+                    </p>
+                    <p>
+                        Hoje, o padrão prioriza o <strong>tamanho</strong> da senha em vez de senhas extremamente
+                        complexas. Senhas longas, formadas por combinações de palavras comuns fáceis de lembrar
+                        (<em>passphrases</em>), são muito mais difíceis de serem quebradas por computadores e muito
+                        mais fáceis para nós memorizarmos.
+                    </p>
+                </div>
+
+                <div class="caixa-curiosidade">
+                    <span class="caixa-curiosidade-icone" aria-hidden="true">🔓</span>
+                    <div class="caixa-curiosidade-texto">
+                        <span class="caixa-curiosidade-titulo">Você sabia?</span>
+                        <p>Há anos, "123456" aparece no topo dos rankings mundiais de senhas mais usadas — e um
+                            programa comum de quebra de senhas descobre uma sequência assim em menos de 1
+                            segundo.</p>
+                    </div>
+                </div>
+
+                <p>
+                    <a href="https://rcv.com.br/2023/08/03/quao-segura-e-a-sua-senha/" target="_blank" rel="noopener"
+                        class="link-fonte">Fonte</a>
+                </p>
+
+                <div class="galeria-senhas">
+                    <div class="container-tabela-img">
+                        <a href="https://rcv.com.br/2023/08/03/quao-segura-e-a-sua-senha/" target="_blank"
+                            rel="noopener">
+                            <img src="img/TabelaComparativaPadrãoNIST.jpeg" alt="Tabela Comparativa Padrão NIST"
+                                class="img-senha" loading="lazy">
+                            <span class="legenda-img">Tabela comparativa com as novas diretrizes recomendadas pelo
+                                padrão NIST.</span>
+                        </a>
+                    </div>
+
+                    <div class="container-tabela-img">
+                        <a href="https://melomoreiraadvogados.com.br/dicas-para-criar-senhas-fortes-e-exclusivas/"
+                            target="_blank" rel="noopener">
+                            <img src="img/TabelaDeSenhasFortes.png" alt="Tabela de Senhas Fortes" class="img-senha"
+                                loading="lazy">
+                            <span class="legenda-img">Tabela que mostra o tempo estimado para quebra de senhas de
+                                acordo com o comprimento e caracteres utilizados.</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-ferramentas">
+                    <div class="caixa-ferramenta">
+                        <h3>Verificador de Senha</h3>
+                        <p class="descricao-ferramenta">Descubra se a sua senha atual é realmente segura contra
+                            ataques.</p>
+                        <div class="container-senha">
+                            <label for="senha-teste" class="rotulo-oculto">Digite uma senha para testar a
+                                força</label>
+                            <input type="password" id="senha-teste" class="entrada-dados"
+                                placeholder="Digite uma senha para testar" autocomplete="new-password">
+                            <button type="button" id="btn-mostrar-senha" class="btn-olho"
+                                aria-label="Mostrar senha">👁️</button>
+                        </div>
+                        <button type="button" id="btn-verificar-senha" class="botao-acao">Verificar Força</button>
+
+                        <div class="velocimetro-container">
+                            <svg class="velocimetro-svg" viewBox="0 0 200 110" aria-hidden="true">
+                                <path d="M 20 100 A 80 80 0 0 1 60 30.72" fill="none" stroke="var(--cor-perigo)"
+                                    stroke-width="14" stroke-linecap="round" />
+                                <path d="M 60 30.72 A 80 80 0 0 1 140 30.72" fill="none" stroke="var(--cor-aviso)"
+                                    stroke-width="14" stroke-linecap="round" />
+                                <path d="M 140 30.72 A 80 80 0 0 1 180 100" fill="none" stroke="var(--cor-sucesso)"
+                                    stroke-width="14" stroke-linecap="round" />
+                                <g id="velocimetro-agulha" class="velocimetro-agulha">
+                                    <line x1="100" y1="100" x2="100" y2="28" stroke="#1c2128" stroke-width="4"
+                                        stroke-linecap="round" />
+                                    <circle cx="100" cy="100" r="8" fill="#1c2128" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="area-resultado">
+                            <p id="resultado-forca" role="status">Aguardando senha...</p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-ferramenta">
+                        <h3>Gerador de Senha Forte</h3>
+                        <p class="descricao-ferramenta">Crie uma senha complexa com letras, números e símbolos.</p>
+                        <button type="button" id="btn-gerar-senha" class="botao-acao">Gerar Nova Senha</button>
+                        <label for="senha-gerada" class="rotulo-oculto">Senha gerada</label>
+                        <input type="text" id="senha-gerada" class="entrada-dados leitura-apenas"
+                            placeholder="Sua nova senha aparecerá aqui" readonly>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seguranca-contas" class="secao">
+            <div class="cartao-conteudo">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Segurança · Contas</p>
+                    <span class="tempo-leitura" data-tempo-leitura></span>
+                </div>
+                <h2>Segurança nas Contas</h2>
+                <h3>Acesso a contas de jogos e métodos de segurança</h3>
+                <p>
+                    Mesmo uma senha forte não é suficiente sozinha. Contas de jogos, e-mails e redes sociais são
+                    alvos constantes porque costumam guardar dados de pagamento, itens virtuais valiosos e
+                    informações pessoais. A camada extra de proteção recomendada hoje é a
+                    <strong>verificação em duas etapas (2FA)</strong>: além da senha ("algo que você sabe"), o
+                    sistema exige um segundo fator, como um código gerado por um aplicativo autenticador, uma
+                    notificação no celular ou a biometria ("algo que você tem ou é").
+                </p>
+                <p>
+                    Sempre que possível, prefira aplicativos autenticadores em vez de código por SMS — o SMS pode
+                    ser interceptado por golpes de troca de chip (<em>SIM swap</em>). Outro hábito importante é nunca
+                    reutilizar a mesma senha em contas diferentes: se uma plataforma sofrer um vazamento, as demais
+                    continuam protegidas. Um gerenciador de senhas ajuda a manter senhas únicas e longas sem a
+                    necessidade de memorizar todas elas.
+                </p>
+
+                <div class="fluxo-2fa">
+                    <div class="etapa-2fa">
+                        <span class="etapa-2fa-icone" aria-hidden="true">🔑</span>
+                        <span class="etapa-2fa-titulo">1. Senha</span>
+                        <span class="etapa-2fa-legenda">Algo que você sabe</span>
+                    </div>
+                    <span class="seta-2fa" aria-hidden="true">→</span>
+                    <div class="etapa-2fa">
+                        <span class="etapa-2fa-icone" aria-hidden="true">📱</span>
+                        <span class="etapa-2fa-titulo">2. Segundo fator</span>
+                        <span class="etapa-2fa-legenda">Algo que você tem ou é</span>
+                    </div>
+                    <span class="seta-2fa" aria-hidden="true">→</span>
+                    <div class="etapa-2fa">
+                        <span class="etapa-2fa-icone" aria-hidden="true">✅</span>
+                        <span class="etapa-2fa-titulo">Acesso liberado</span>
+                        <span class="etapa-2fa-legenda">Conta protegida</span>
+                    </div>
+                </div>
+
+                <a href="https://internetsegura.br/" target="_blank" rel="noopener" class="link-fonte">Fonte</a>
+            </div>
+        </section>
+
+        <section id="lgpd" class="secao">
+            <div class="cartao-conteudo">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Privacidade · LGPD</p>
+                    <span class="tempo-leitura" data-tempo-leitura></span>
+                </div>
+                <h2>LGPD (Lei Geral de Proteção de Dados)</h2>
+                <p>
+                    A nova Lei Geral de Proteção de Dados (LGPD), em vigor desde setembro de 2020, exige mudanças
+                    que impactam toda a sociedade. Empresas brasileiras de todos os setores e portes precisam
+                    seguir um conjunto de normas ao coletar, tratar e armazenar dados pessoais dos cidadãos.
+                </p>
+                <p>
+                    Com base no GDPR (Regulamento Geral de Proteção de Dados da União Europeia), a LGPD se aplica a
+                    qualquer pessoa física ou jurídica, pública ou privada, que realize tratamento de dados
+                    pessoais — online ou offline. Por isso, sua aplicação é ampla e abrange praticamente todo o
+                    cotidiano empresarial.
+                </p>
+                <p>
+                    O principal objetivo da lei é proteger dados pessoais de cidadãos brasileiros (ou de
+                    estrangeiros que tenham negócios com empresas no Brasil), impondo regras e sanções para que
+                    informações coletadas não sejam usadas de forma diferente da que foi informada ao titular.
+                </p>
+
+                <div class="faixa-penalidades">
+                    <div class="penalidade-item">
+                        <span class="penalidade-numero">2%</span>
+                        <span class="penalidade-legenda">do faturamento da empresa no último exercício, por
+                            infração</span>
+                    </div>
+                    <div class="penalidade-item">
+                        <span class="penalidade-numero">R$ 50 Mi</span>
+                        <span class="penalidade-legenda">é o limite máximo da multa, por infração</span>
+                    </div>
+                    <div class="penalidade-item">
+                        <span class="penalidade-numero">+ Indenização</span>
+                        <span class="penalidade-legenda">por danos morais, patrimoniais, individuais ou
+                            coletivos ao titular</span>
+                    </div>
+                </div>
+
+                <p>
+                    Para evitar problemas, empresas e pessoas devem adotar ações preventivas, técnicas e processos
+                    de controle no tratamento de informações. A própria lei dedica capítulos inteiros aos direitos
+                    do titular dos dados e à segurança das informações:
+                </p>
+
+                <div class="caixa-curiosidade">
+                    <span class="caixa-curiosidade-icone" aria-hidden="true">💡</span>
+                    <div class="caixa-curiosidade-texto">
+                        <span class="caixa-curiosidade-titulo">Você sabia?</span>
+                        <p>A LGPD brasileira (2020) e a GDPR europeia (2018) são "primas": a nossa lei se inspirou
+                            bastante na europeia, por isso as regras de multa e os direitos do titular seguem uma
+                            lógica parecida nos dois lados do Atlântico.</p>
+                    </div>
+                </div>
+
+                <div class="tira-artigos">
+                    <span class="chip-artigo" title="Capítulo III - Dos Direitos do Titular">Art. 18 · Direitos do
+                        Titular</span>
+                    <span class="chip-artigo" title="Capítulo VII - Da Segurança e das Boas Práticas, Seção I">Art. 46 ·
+                        Segurança dos
+                        Dados</span>
+                    <span class="chip-artigo" title="Capítulo VII - Seção I - Sigilo de Dados">Art. 48 · Sigilo de
+                        Dados</span>
+                </div>
+
+                <a href="https://rcv.com.br/lgpd/" target="_blank" rel="noopener" class="link-fonte">Fonte</a>
+            </div>
+        </section>
+
+        <section id="termos-seguranca" class="secao">
+            <div class="cartao-conteudo">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Privacidade · Termos de Uso</p>
+                    <span class="tempo-leitura" data-tempo-leitura></span>
+                </div>
+                <h2>Termos de Segurança</h2>
+                <h3>Coletando dados dos usuários - Pokémon GO</h3>
+                <p>A coleta de dados em aplicativos como o Pokémon GO levanta questões sobre o uso indevido de
+                    informações fornecidas pelos usuários:</p>
+                <ul class="lista-pontos">
+                    <li><strong>Coleta para fins industriais:</strong> Usuários coletam dados (mais de 30 bilhões de
+                        imagens) para a criação de um Sistema de Posicionamento Visual (VPS) que permite a navegação
+                        de robôs de entrega, sem que isso fosse claramente compreendido inicialmente.</li>
+                    <li><strong>Desconexão e finalidade:</strong> Existe uma diferença entre o que o usuário
+                        acredita estar fazendo ("melhorar o jogo") e o uso real dos dados, afetando o princípio da
+                        limitação da finalidade.</li>
+                    <li><strong>Termos ambíguos:</strong> As empresas utilizam termos e condições vagos, como
+                        "aprimoramento de serviços", que permitem abrangência para quase qualquer uso futuro,
+                        tornando o consentimento formal questionável.</li>
+                    <li><strong>Autodeterminação informativa:</strong> O modelo de coleta fere o direito de o
+                        usuário saber a finalidade e o alcance do uso de seus dados, processo este facilitado pela
+                        "habituação" social à coleta de informações.</li>
+                </ul>
+                <a href="https://www.ihu.unisinos.br/categorias/664162-escandalo-do-pokemon-go-da-captura-de-criaturas-ao-mapeamento-do-mundo-para-robos-de-entrega"
+                    target="_blank" rel="noopener" class="link-fonte">Fonte</a>
+            </div>
+        </section>
+
+        <section id="combate-desinformacao" class="secao">
+            <div class="cartao-conteudo">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Informação · Fake News</p>
+                    <span class="tempo-leitura" data-tempo-leitura></span>
+                </div>
+                <h2>Combate à Desinformação</h2>
+                <h3>Fontes confiáveis e portais governamentais (.gov)</h3>
+                <p>
+                    Antes de compartilhar qualquer notícia, vale o hábito de checar três coisas: quem publicou,
+                    quando foi publicado e se outros veículos sérios estão noticiando o mesmo fato. Conteúdos com
+                    linguagem muito apelativa ou urgente — pedindo para "compartilhar antes que apaguem" — são um
+                    sinal clássico de alerta. Segundo dados do Cetic.br, apenas 37% dos brasileiros que acessam a
+                    internet exclusivamente pelo celular costumam verificar se uma informação é verdadeira antes de
+                    repassá-la, o que ajuda a explicar a velocidade com que boatos se espalham.
+                </p>
+                <p>
+                    Para informações oficiais, prefira sempre domínios <strong>.gov.br</strong>, que pertencem
+                    exclusivamente a órgãos públicos brasileiros verificados, e procure também agências
+                    independentes de checagem de fatos quando a notícia parecer suspeita. Esse cuidado simples é uma
+                    das formas mais eficazes de cidadania digital na prática.
+                </p>
+
+                <h3>Antes de compartilhar, marque o que você já verificou</h3>
+                <ul class="checklist-desinformacao" id="checklist-compartilhar">
+                    <li>
+                        <input type="checkbox" id="check-quem-publicou">
+                        <label for="check-quem-publicou">Eu sei quem publicou essa informação (site, perfil ou
+                            veículo).</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check-quando">
+                        <label for="check-quando">Eu verifiquei a data de publicação — não é uma notícia antiga
+                            recirculando.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check-outros-veiculos">
+                        <label for="check-outros-veiculos">Encontrei o mesmo fato confirmado por outro veículo
+                            sério e independente.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="check-linguagem">
+                        <label for="check-linguagem">A linguagem não está usando urgência ou apelo emocional para me
+                            fazer compartilhar rápido.</label>
+                    </li>
+                </ul>
+                <p class="checklist-mensagem" id="checklist-mensagem" role="status">
+                    ✅ Ótimo! Você verificou os pontos essenciais antes de compartilhar.
+                </p>
+
+                <a href="https://internetsegura.br/" target="_blank" rel="noopener" class="link-fonte">Fonte</a>
+            </div>
+        </section>
+
+        <section id="uso-inadequado-ias" class="secao">
+            <div class="cartao-conteudo">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Inteligência Artificial</p>
+                    <span class="tempo-leitura" data-tempo-leitura></span>
+                </div>
+                <h2>Uso Inadequado das IAs</h2>
+                <h3>Propagandas falsas com intuito malicioso</h3>
+
+                <div class="caixa-curiosidade">
+                    <span class="caixa-curiosidade-icone" aria-hidden="true">🎭</span>
+                    <div class="caixa-curiosidade-texto">
+                        <span class="caixa-curiosidade-titulo">Você sabia?</span>
+                        <p>O termo <em>deepfake</em> surgiu por volta de 2017, combinando "deep learning"
+                            (aprendizado profundo) com "fake" (falso). Hoje a mesma técnica é usada tanto para
+                            trocar rostos em vídeos quanto para clonar vozes em áudios falsos.</p>
+                    </div>
+                </div>
+
+                <p><strong>Uso inadequado da IA</strong></p>
+
+                <div class="grade-riscos">
+                    <div class="cartao-risco">
+                        <h4>1. Desinformação e fake news</h4>
+                        <p>A IA pode ser usada para criar textos, imagens, vídeos e áudios falsos, espalhando
+                            notícias enganosas e manipulando pessoas nas redes sociais e na política. Isso pode
+                            afetar eleições, opiniões públicas e a confiança nas informações.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>2. Violação de privacidade</h4>
+                        <p>Alguns sistemas de IA coletam muitos dados pessoais dos usuários sem transparência
+                            suficiente. Isso coloca em risco a privacidade, especialmente de jovens e crianças.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>3. Discriminação algorítmica</h4>
+                        <p>A IA pode reproduzir preconceitos existentes nos dados usados para treiná-la, causando
+                            discriminação contra minorias em áreas como emprego, segurança e justiça.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>4. Dependência excessiva</h4>
+                        <p>O uso exagerado da IA pode reduzir a criatividade, o pensamento crítico e a aprendizagem
+                            das pessoas, principalmente em ambientes escolares e universitários.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>5. Uso antiético na educação</h4>
+                        <p>Muitos estudantes usam IA para fazer trabalhos completos sem aprender o conteúdo, o que
+                            prejudica o desenvolvimento acadêmico e gera problemas de plágio.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>6. Riscos para direitos humanos</h4>
+                        <p>A UNESCO alerta que a IA precisa respeitar direitos humanos, inclusão, diversidade e
+                            dignidade humana. Sem regulamentação, ela pode aumentar desigualdades sociais.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>7. Uso criminoso da IA</h4>
+                        <p>A inteligência artificial também pode ser usada para golpes digitais, ataques virtuais e
+                            outras atividades criminosas, facilitando fraudes e manipulação.</p>
+                    </div>
+
+                    <div class="cartao-risco">
+                        <h4>8. Ética e regulamentação</h4>
+                        <p>Especialistas e organizações como a UNESCO defendem regras e princípios éticos para
+                            garantir que a IA beneficie a sociedade de forma segura e responsável.</p>
+                    </div>
+                </div>
+
+                <div class="container-anuncios">
+                    <a href="/alerta">
+                        <img src="img/Anuncio1.png" alt="Anúncio Falso 1" class="img-anuncio" loading="lazy">
+                    </a>
+                    <a href="/alerta">
+                        <img src="img/Anuncio2.png" alt="Anúncio Falso 2" class="img-anuncio" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="secao">
+            <div class="cartao-conteudo destaque-inicial">
+                <div class="cabecalho-secao">
+                    <p class="categoria-etiqueta">Desafio · Revisão</p>
+                </div>
+                <h2>Teste seus Conhecimentos</h2>
+                <p>
+                    Chegou até aqui? Hora de provar! Responda as 6 perguntas abaixo e descubra se você está pronto
+                    pra disputar a pole position da Cidadania Digital. 🏁
+                </p>
+
+                <div class="quiz-app" id="quiz-app" aria-live="polite">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; Hackathon 2026 - Projeto Cidadania Digital.</p>
+    </footer>
+
+    <!-- Widget de chat flutuante -->
+    <div class="chat-flutuante" id="chat-flutuante" data-estado="fechado" role="dialog"
+        aria-label="Assistente virtual de Cidadania Digital" aria-hidden="true">
+        <div class="alca-redimensionar" id="chat-redimensionar" aria-hidden="true" title="Arraste para redimensionar">
+        </div>
+        <header class="chatbot-cabecalho">
+            <div class="chatbot-identidade">
+                <h3>Copiloto Digital</h3>
+                <span class="chatbot-status"><span class="ponto-status" aria-hidden="true"></span> Online</span>
+            </div>
+            <div class="chatbot-acoes">
+                <button type="button" id="chat-minimizar" class="botao-chatbot-acao"
+                    aria-label="Minimizar chat">&#8211;</button>
+                <button type="button" id="chat-fechar" class="botao-chatbot-acao"
+                    aria-label="Fechar chat">&times;</button>
+            </div>
+        </header>
+        <div class="chatbot-conteudo" id="chat-conteudo" aria-live="polite">
+            <div class="balao-chat balao-ia">
+                Olá! Sou o Copiloto Digital. Posso ajudar com alguma dúvida sobre cidadania e segurança digital?
+            </div>
+        </div>
+        <div class="chatbot-entrada">
+            <label for="chat-input" class="rotulo-oculto">Digite sua mensagem para o assistente</label>
+            <input type="text" id="chat-input" placeholder="Digite sua dúvida aqui..." autocomplete="off">
+            <button type="button" id="chat-enviar" aria-label="Enviar mensagem">Enviar</button>
+        </div>
+    </div>
+
+    <button type="button" id="chat-fab" class="botao-chat-fab chamando-atencao" aria-label="Abrir assistente virtual"
+        aria-expanded="false" aria-controls="chat-flutuante">
+        <span aria-hidden="true">💬</span>
+    </button>
+
+    <button type="button" id="btn-topo" class="botao-topo" aria-label="Voltar ao topo da página">
+        <span class="seta-topo" aria-hidden="true">↑</span>
+    </button>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
